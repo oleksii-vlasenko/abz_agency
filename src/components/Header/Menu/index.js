@@ -1,6 +1,7 @@
 import React, {useState} from "react";
-import menu_icon from "../../../assets/images/menu icon.svg";
-import MenuList from "./MenuList";
+import MobMenuList from "./MobMenuList";
+import DescMenuList from "./DescMenuList";
+
 
 const Menu = () => {
 
@@ -16,8 +17,11 @@ const Menu = () => {
                  onClick={setShowMenu}>
             </div>
             {
-                show && <MenuList hideMenu={setShowMenu}/>
+                show && <MobMenuList hideMenu={setShowMenu}/>
             }
+            <DescMenuList />
+
+
         </React.Fragment>
     );
 };

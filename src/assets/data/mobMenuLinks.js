@@ -1,4 +1,4 @@
-const menuLinks = [
+const mobMenuLinks = [
     [
         {title: "About me", link: ""},
         {title: "Relationships", link: ""},
@@ -22,4 +22,4 @@ const menuLinks = [
     ]
 ];
 
-export default menuLinks;
+export default mobMenuLinks;

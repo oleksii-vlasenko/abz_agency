@@ -1,16 +1,12 @@
 import React from "react";
-import list from "../../../../menuLinks";
+import list from "../../../../assets/data/mobMenuLinks";
 import Brand from "../../Brand";
 
-/*
-* list = [ [{title, link}], [{title, link}], [{title, link}] ];
-*/
-
-const MenuList = ({hideMenu}) => {
+const MobMenuList = ({hideMenu}) => {
 
     const MenuItems = () => list.map(arr => (
         <React.Fragment>
-            <div className="menu-list-underline"/>
+            <div className="mob-menu-list-underline"/>
             {
                 arr.map(item => (
                     <li>
@@ -22,16 +18,16 @@ const MenuList = ({hideMenu}) => {
     ));
 
     return (
-        <div className="menu-container"
+        <div className="mob-menu-container"
              onClick={hideMenu}>
-            <div className="menu-list-logo">
+            <div className="mob-menu-list-logo">
                 <Brand/>
             </div>
-            <div className="menu-container-block">
-                <div className="menu-list">
+            <div className="mob-menu-container-block">
+                <div className="mob-menu-list">
                     <ul>
                         {MenuItems()}
-                        <div className="menu-list-underline"/>
+                        <div className="mob-menu-list-underline"/>
                     </ul>
                 </div>
             </div>
@@ -39,4 +35,4 @@ const MenuList = ({hideMenu}) => {
     );
 };
 
-export default MenuList;
+export default MobMenuList;
