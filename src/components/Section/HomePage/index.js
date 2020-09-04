@@ -8,10 +8,10 @@ const HomePage = () => {
                 <h1 className="homepage-h1">
                     Test assignment  for Frontend Developer position
                 </h1>
-                <p>
-                    We kindly remind you that your test assignment should be submit
+                <p className="homepage-p">
+                    We kindly remind you that your test assignment should be submitted as a link to github/bitbucket repository
                 </p>
-                <button>
+                <button className="btn">
                     Sing up now
                 </button>
             </div>

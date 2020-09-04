@@ -8,9 +8,44 @@ body
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
+.btn
+  margin: 25px 0 0 0
+  width: 211px
+  height: 39px
+  background-color: #EF5B4C
+  color: #FFFFFF
+  font-size: 16px
+  font-weight: 400
+  line-height: 24px
+  border: none
+  border-radius: 5px
+  @media only screen and (min-width: 768px)
+    margin: 38px 0 0 30px
+  &:hover
+    background-color: #DE4A3B
 
-code
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+.font-h1
+  font-size: 30px
+  font-weight: 400
+  line-height: 34px
+  @media only screen and (min-width: 768px)
+    font-size: 40px
+    font-weight: 400
+    line-height: 44px
+  @media only screen and (min-width: 1200px)
+    font-size: 50px
+    font-weight: 400
+    line-height: 54px
+
+.font-h2
+  font-size: 24px
+  font-weight: 400
+  line-height: 29px
+
+.font-p
+  font-size: 16px
+  font-weight: 400
+  line-height: 24px
 
 //containers--App
 @import "containers/App/styles"
@@ -32,3 +67,18 @@ code
 
 //components--Section--HomePage
 @import "components/Section/HomePage/styles"
+
+//components--Section--AboutPage
+@import "components/Section/AboutPage/styles"
+
+//components--Section--UsersPage
+@import "components/Section/UsersPage/styles"
+
+//component--Section--UserPage--UserCard
+@import "components/Section/UsersPage/UserCard/styles"
+
+//components--Section--RegisterPage
+@import "components/Section/RegisterPage/styles"
+
+//components--Footer
+@import "components/Footer/styles"
